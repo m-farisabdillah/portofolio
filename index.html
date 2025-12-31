@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio || Muhamad Faris Abdillah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Dekorasi Latar Belakang -->
+    <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-900/20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-900/20 blur-[120px] rounded-full"></div>
+        <div id="particles-container"></div>
+    </div>
+
+    <!-- Navigasi -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto glass rounded-2xl px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-extrabold tracking-tighter flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white text-sm">F</span>
+                </div>
+                <span class="hidden sm:block text-white">Faris</span></span>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#home" class="hover:text-white transition-colors">Beranda</a>
+                <a href="#about" class="hover:text-white transition-colors">Tentang</a>
+                <a href="#skills" class="hover:text-white transition-colors">Keahlian</a>
+                <a href="#projects" class="hover:text-white transition-colors">Proyek</a>
+                <a href="#contact" class="px-5 py-2 tech-gradient rounded-xl text-white hover:opacity-90 transition-opacity">Kontak</a>
+            </div>
+
+            <!-- Tombol Menu Mobile -->
+            <button class="md:hidden text-slate-300" onclick="toggleMenu()">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden absolute top-20 left-6 right-6 glass p-6 rounded-2xl flex flex-col gap-4 text-center md:hidden">
+            <a href="#home" class="py-2 text-white" onclick="toggleMenu()">Beranda</a>
+            <a href="#about" class="py-2 text-white" onclick="toggleMenu()">Tentang</a>
+            <a href="#skills" class="py-2 text-white" onclick="toggleMenu()">Keahlian</a>
+            <a href="#projects" class="py-2 text-white" onclick="toggleMenu()">Proyek</a>
+            <a href="#contact" class="py-3 tech-gradient rounded-xl font-bold text-white" onclick="toggleMenu()">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Bagian Hero -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center px-6 pt-20">
+        <div class="text-center max-w-4xl reveal">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-white">
+                Membangun Kreativitas <br>
+                <span class="text-gradient">Lewat Baris Kode.</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                Halo! Saya Muhamad Faris Abdillah, pengembang perangkat lunak yang berfokus pada pembuatan solusi digital yang inovatif, efisien, dan berdampak.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="px-8 py-4 tech-gradient rounded-2xl font-bold text-lg text-white shadow-lg shadow-blue-500/20 hover:scale-105 transition-transform">
+                    Lihat Proyek Saya
+                </a>
+                <a href="#" class="px-8 py-4 glass border border-slate-700 rounded-2xl font-bold text-lg text-white hover:bg-slate-800 transition-colors inline-flex items-center justify-center gap-2">
+                    Unduh CV <i data-lucide="download" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-16 reveal flex gap-6 text-slate-500">
+            <a href="https://github.com/punyafaris" class="hover:text-blue-400 transition-colors"><i data-lucide="github"></i></a>
+            <a href="#" class="hover:text-blue-400 transition-colors"><i data-lucide="linkedin"></i></a>
+            <a href="https://www.instagram.com/faris_abdill4h/" class="hover:text-blue-400 transition-colors"><i data-lucide="instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- Bagian Statistik -->
+    <section class="max-w-5xl mx-auto px-6 py-20">
+        <div class="flex grid-cols-2 md:grid-cols-4 gap-8 reveal justify-center">
+            <div class="text-center p-6 glass rounded-3xl">
+                <div class="text-3xl font-bold text-blue-400 mb-1">10+</div>
+                <div class="text-slate-500 text-sm">Proyek Selesai</div>
+            </div>
+            <div class="text-center p-6 glass rounded-3xl">
+                <div class="text-3xl font-bold text-purple-400 mb-1">4+</div>
+                <div class="text-slate-500 text-sm">Tahun Belajar</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="about" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal order-2 md:order-1">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Tentang <span class="text-blue-400">Saya</span></h2>
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    Saya adalah mahasiswa Teknik Informatika di Universitas Islam Negeri K.H Abdurrahman Wahid Pekalongan. Saya memiliki minat besar dalam pengembangan aplikasi web dan keamanan siber. 
+                </p>
+                <p class="text-slate-400 leading-relaxed mb-8 text-lg">
+                    Ketertarikan saya terhadap dunia teknologi dimulai sejak bangku SMA melalui eksplorasi mendalam di bidang frontend dan backend. Bagi saya, memperkuat literasi teknologi merupakan langkah strategis agar kita tidak hanya menjadi penonton, tetapi mampu bergerak selaras dengan arus inovasi global.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 text-slate-300">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400">
+                            <i data-lucide="code-2" class="w-5 h-5"></i>
+                        </div>
+                        <div>Fokus pada Pengembangan Website</div>
+                    </div>
+                    <div class="flex items-center gap-4 text-slate-300">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400">
+                            <i data-lucide="zap" class="w-5 h-5"></i>
+                        </div>
+                        <div>Selalu Belajar Teknologi Baru</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal order-1 md:order-2 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2rem] opacity-20 group-hover:opacity-40 blur transition-opacity"></div>
+                    <div class="relative w-64 h-80 md:w-80 md:h-[450px] bg-slate-800 rounded-[2rem] overflow-hidden border-2 border-slate-700 flex flex-col items-center justify-center p-6 text-center">
+                        <i data-lucide="user" class="w-20 h-20 text-slate-700 mb-4"></i>
+                        <span class="text-slate-500 font-medium"><img src="asset/profil.png" alt="Profil Faris"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Keahlian -->
+    <section id="skills" class="py-20 px-6 bg-slate-900/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Keahlian <span class="text-purple-400">Teknis</span></h2>
+                <p class="text-slate-400">Teknologi yang pernah saya gunakan untuk mewujudkan ide menjadi nyata.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="reveal glass p-8 rounded-[2rem]">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-500/20 flex items-center justify-center text-blue-400 mb-6">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Frontend Development</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 rounded-lg text-sm border border-slate-700">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-lg text-sm border border-slate-700">Bootstrap</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-lg text-sm border border-slate-700">Javascript</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="reveal glass p-8 rounded-[2rem]" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6">
+                        <i data-lucide="server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Backend Development</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 rounded-lg text-sm border border-slate-700">C++</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-lg text-sm border border-slate-700">My Sql</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-lg text-sm border border-slate-700">php</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="reveal glass p-8 rounded-[2rem]" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 rounded-2xl bg-pink-500/20 flex items-center justify-center text-pink-400 mb-6">
+                        <i data-lucide="wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Tools & Others</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 rounded-lg text-sm border border-slate-700">Git / GitHub</span>
+                        <span class="px-3 py-1 bg-slate-800 rounded-lg text-sm border border-slate-700">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek -->
+    <section id="projects" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 reveal">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Proyek <span class="text-pink-400">Terpilih</span></h2>
+                    <p class="text-slate-400 max-w-xl">Eksplorasi solusi kreatif yang telah saya bangun selama masa studi.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Proyek 1 -->
+                <div class="reveal group">
+                    <div class="relative overflow-hidden rounded-[2rem] border border-slate-700/50 bg-slate-900 aspect-video mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="asset/projek1.png" alt="Projek mesin kasri Semester 1">
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6 flex justify-between items-center transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
+                            <div class="flex gap-2 text-white">
+                                <span class="px-2 py-1 glass text-[10px] rounded uppercase font-bold">C++</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/punyafaris/sistem.kasir/blob/main/projek.cpp" target="_blank" class="w-10 h-10 glass rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors">
+                                    <i data-lucide="github" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-blue-400 transition-colors text-white">Projek C++ Semester 1</h3>
+                    <p class="text-slate-400">Aplikasi sistem penghitunga kasir warung makan menggunakan bahasa pemrograman C++.</p>
+                </div>
+
+                <!-- Proyek 2 -->
+                <div class="reveal group">
+                    <div class="relative overflow-hidden rounded-[2rem] border border-slate-700/50 bg-slate-900 aspect-video mb-6">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i data-lucide="smartphone" class="w-16 h-16 text-slate-800"></i>
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6 flex justify-between items-center transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
+                            <div class="flex gap-2 text-white">
+                                <span class="px-2 py-1 glass text-[10px] rounded uppercase font-bold">Python</span>
+                                <span class="px-2 py-1 glass text-[10px] rounded uppercase font-bold">AI/ML</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="w-10 h-10 glass rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors">
+                                    <i data-lucide="github" class="w-5 h-5"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 glass rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors">
+                                    <i data-lucide="external-link" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 group-hover:text-purple-400 transition-colors text-white">Crypto Pulse Bot</h3>
+                    <p class="text-slate-400">Bot otomatis yang mendeteksi tren mata uang kripto menggunakan sentimen media sosial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto glass p-8 md:p-12 rounded-[3rem] border-slate-700/50 relative overflow-hidden reveal">
+            <div class="absolute top-0 right-0 p-12 opacity-10 text-white">
+                <i data-lucide="mail" class="w-40 h-40"></i>
+            </div>
+            
+            <div class="relative z-10 text-center md:text-left">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 text-white">Kontak saya</h2>
+                <p class="text-slate-400 text-lg mb-10 max-w-lg">
+                    Apakah Anda memiliki proyek yang menarik atau hanya ingin menyapa? Ayo hubungi saya.
+                </p>
+                
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <a href="muhamad.farisabdillah@gmail.com" class="w-full md:w-auto px-8 py-4 tech-gradient rounded-2xl font-bold text-lg text-center text-white">
+                        Kirim Email
+                    </a>
+                    <div class="flex gap-6">
+                        <a href="https://github.com/punyafaris" class="text-slate-400 hover:text-white transition-colors">GitHub</a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
+                        <a href="https://Wa.me/6281229014883" class="text-slate-400 hover:text-white transition-colors">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <div class="mb-6">
+            <span class="font-bold text-slate-300">Faris.dev</span>
+        </div>
+        <p>© 2026 Dibuat oleh Muahamad Faris Abdillah.</p>
+        <p class="mt-2">Semua Hak Dilindungi Undang-Undang.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
