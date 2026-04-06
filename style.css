@@ -76,3 +76,50 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #334155;
 }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #3328cf;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    border-radius: 5px;
+    box-sizing: border-box; /* Agar padding tidak merusak lebar */
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Tombol Kirim */
+.btn-kirim {
+    width: 100%;
+    background-color: #031caa;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-kirim:hover {
+    background-color: #082dff;
+}
